@@ -1,0 +1,149 @@
+.price
+
+    .price-container
+        @include flex(column, center, center)
+        padding-bottom: 4rem
+
+        h1
+            padding-top: 2rem
+        
+        #subtitle
+            padding: .4rem
+            color: #8D8D8D
+            font-size: 1.1rem
+        
+        h2
+            font-size: 1.9rem
+            padding: 2rem 0 3rem 0
+        
+        .cards-container
+            width: 100%
+            @include flex(row, center, flex-start)
+            gap: 3rem
+
+            .card-container
+                @include flex(column)
+                border: 2px solid #9A0000
+                border-radius: 5px
+                &:nth-child(1)
+                    .access-container
+                        &:nth-last-child(2), &:nth-last-child(3), &:nth-last-child(4)
+                            .checkmark
+                                .checkmark_circle
+                                    background-color: #737373
+
+                &:nth-child(2)
+                    background-color: #9A0000
+
+                    #btn
+                        button
+                            background-color: white
+                            color: #9A0000
+                    
+                    h3
+                        color: white
+
+                    .info-package
+                        span
+                            color: white
+                    
+                    span
+                        color: white
+                    
+                    .show-price
+                        #price-number
+                            color: white
+                        .month
+                            span
+                                color: white
+
+                #btn
+                    @include flex(row, center, center)
+                    padding: 2rem 0
+
+                    button
+                        cursor: pointer
+                        width: 70%
+                        padding: 1rem
+                        background-color: #9A0000
+                        border: none
+                        border-radius: 10px
+                        color: white
+                        font-size: 1rem
+                        font-weight: 500
+
+                h3
+                    padding: 2rem 0 1rem 0
+                    text-align: center
+                    font-size: 1.4rem
+
+                .info-package
+                    @include flex(row, center, center)
+                    text-align: center
+                    height: 60px
+        
+                    span
+                        width: 60%
+                        color: #737373
+                            
+                
+                .show-price
+                    @include flex(row, center, center)
+                    padding: 3rem 0
+
+                    #price-number
+                        font-size: 2.5rem
+                        font-weight: 600
+                        color: #9A0000
+                    
+                    .month
+                        @include flex(column, center, flex-start)
+                        padding-left: .5rem
+
+                        span
+                            color: #9A0000
+                            font-weight: 600
+                
+                .access-container
+                    @include flex(row)
+                    gap: 1.5rem
+                    padding: 1rem 2rem
+
+                    .access-text
+                        font-size: 1.1rem
+
+                    .checkmark 
+                        display: inline-block
+                        width: 22px
+                        height:22px
+                        -ms-transform: rotate(45deg)
+                        -webkit-transform: rotate(45deg) 
+                        transform: rotate(45deg)
+
+                    .checkmark_circle 
+                        position: absolute
+                        width:22px
+                        height:22px
+                        background-color: green
+                        border-radius: 50%
+                        left:0
+                        top:0
+
+                    .checkmark_stem 
+                        position: absolute
+                        width:3px
+                        height:9px
+                        background-color:#fff
+                        left:11px
+                        top:6px
+                    
+
+                    .checkmark_kick 
+                        position: absolute
+                        width:3px
+                        height:3px
+                        background-color:#fff
+                        left:8px
+                        top:12px
+                    
+

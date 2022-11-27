@@ -1,0 +1,74 @@
+.header
+    &::after
+        content: ''
+        background-color: black
+        height: 3px
+        width: 100%
+        display: block
+
+    .header-container
+        @include flex(row, space-around, center)
+        width: 100%
+
+        .header-left
+            @include flex(row, center, center)
+
+            .img-container
+                margin-right: 1rem
+
+                img
+                    width: 100%
+                    object-fit: cover
+            
+            h1
+                font-size: 1.6rem
+        
+        .header-middle
+
+            ul
+                @include flex(row, center, center)
+                gap: 2rem
+
+                li
+                    font-size: 1.2rem
+                    transition: .2s ease
+                    &:hover
+                        transform: scale(1.1)
+        
+        .header-right
+            @include flex(row, center, center)
+
+            .avatar-container
+                width: 50px
+                height: 50px
+                margin-right: 1rem
+
+                img
+                    border-radius: 100%
+                    width: 100%
+                    object-fit: cover
+                    
+            span
+                font-weight: 500
+                font-size: 1rem
+
+            #logout
+                font-size: 1rem
+                font-weight: 500
+                cursor: pointer
+                border: none
+                background-color: white
+                margin-left: 1.5rem
+            
+            .login-container
+                padding: 0 1.4rem
+                font-size: 1.2rem
+                transition: .2s ease
+                &:hover
+                    transform: scale(1.1)
+
+            .sign-container
+                font-size: 1.2rem
+                transition: .2s ease
+                &:hover
+                    transform: scale(1.1)

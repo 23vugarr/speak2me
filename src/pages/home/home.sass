@@ -1,0 +1,53 @@
+.home
+
+    .home-container
+        @include flex(column, center, center)
+
+        form
+            @include flex(row,center, center)
+            width: 50%
+            margin: 4rem 0
+
+            .search-container
+                @include flex(row, center, center)
+                width: 100%
+                position: relative
+                border: 2px solid $red
+                border-radius: 25px
+
+                input
+                    border: none
+                    outline: none
+                    width: 100%
+                    margin: 0 .5rem
+                    padding: .4rem 1.5rem
+                    font-size: 1rem
+                
+                button
+                    width: 40px
+                    height: 50px
+                    border: none
+                    background: none
+                    padding-right: 1rem
+                    cursor: pointer
+        
+        .speech-container
+            background-color: black
+            @include flex(row, center, center)
+            min-height: 15rem
+            min-width: 50rem
+            border-radius: 3rem
+
+            p
+                color: white
+                text-align: center
+                font-size: 1.6rem
+        
+        .mic-container
+            @include flex(row, center, center)
+            margin-top: 5rem
+            background-color: rgba(201, 31, 31, 0.9)
+            border-radius: 20px
+            padding: 2rem 4rem
+            
+                        
